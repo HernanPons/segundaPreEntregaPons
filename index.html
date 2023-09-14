@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculadora de gastos</title>
+</head>
+<body>
+    
+
+<h1>Gastos Domiciliarios</h1>
+
+<div class="container">
+
+    <div class="items">
+        <label for="alquiler" > <h4>Alquiler</h4></label>
+        <input type="number" placeholder="Ingrese el monto" class="monto" id="alquiler">    
+    </div>
+    <div class="items">
+        <label for="electricidad" > <h4>Electricidad</h4></label>
+        <input type="number" placeholder="Ingrese el monto" class="monto" id="electricidad">    
+    </div>
+    <div class="items">
+        <label for="seguros" > <h4>Seguros</h4></label>
+        <input type="number" placeholder="Ingrese el monto" class="monto" id="seguros">    
+    </div>
+    <div class="items">
+        <label for="internet" > <h4>Internet</h4></label>
+        <input type="number" placeholder="Ingrese el monto" class="monto" id="internet">    
+    </div>
+    <div class="items">
+        <label for="internet"> <h4>Agregar categoria</h4></label>
+        <input type="text" placeholder="Ingrese nueva categoria" class="agregarItem" id="internet">    
+    </div>
+
+
+    
+    
+</div>
+
+<div class="container">
+    <button onclick="sumarMontos()">Sumar Montos</button>
+    <button onclick="reiniciarMontos ()" >Reiniciar</button>
+    <button onclick="agregarCategoria ()" >Agregar</button>
+
+</div>
+
+<h3 id="total">Total: </h3>
+
+    <script src= "./main.js"></script>
+</body>
+</html>
